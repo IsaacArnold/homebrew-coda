@@ -1,7 +1,7 @@
 # homebrew-coda
 
-Homebrew tap for [Coda](https://github.com/IsaacArnold/coda) — a native macOS
-terminal workspace for running Claude Code across git worktrees.
+Homebrew tap for Coda — a native macOS terminal workspace for running Claude
+Code across git worktrees.
 
 ## Install
 
