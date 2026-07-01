@@ -7,8 +7,9 @@
 #
 # Colleagues install with (no GitHub auth — tap + release are public):
 #   brew tap isaacarnold/coda
+#   brew trust isaacarnold/coda    # one-time; Homebrew 6+ gates non-official taps
 #   brew install --cask coda
-# and update later with:
+# and update later with (no re-trust needed):
 #   brew upgrade --cask coda
 cask "coda" do
   version "0.1.0"
@@ -20,7 +21,7 @@ cask "coda" do
   desc "Native macOS terminal workspace for running Claude Code across git worktrees"
   homepage "https://github.com/IsaacArnold/coda"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Coda.app"
 
