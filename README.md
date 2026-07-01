@@ -3,6 +3,10 @@
 Homebrew tap for Coda — a native macOS terminal workspace for running Claude
 Code across git worktrees.
 
+Source code and issues live in the main repo:
+**[IsaacArnold/coda](https://github.com/IsaacArnold/coda)**. This tap only holds
+the cask and hosts the notarized release DMGs.
+
 ## Install
 
 ```sh
