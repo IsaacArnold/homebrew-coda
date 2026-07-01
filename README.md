@@ -4,8 +4,9 @@ Homebrew tap for Coda — a native macOS terminal workspace for running Claude
 Code across git worktrees.
 
 Source code and issues live in the main repo:
-**[IsaacArnold/coda](https://github.com/IsaacArnold/coda)**. This tap only holds
-the cask and hosts the notarized release DMGs.
+**[IsaacArnold/coda](https://github.com/IsaacArnold/coda)**. This tap holds only
+the cask; the notarized release DMGs are hosted on that repo's
+[Releases](https://github.com/IsaacArnold/coda/releases).
 
 ## Install
 
@@ -15,8 +16,10 @@ brew trust isaacarnold/coda    # one-time — see "Why the trust step?" below
 brew install --cask coda
 ```
 
-Coda is signed and notarized by Apple, so it opens with no Gatekeeper warning,
-including on managed/locked-down Macs.
+`brew install` downloads the notarized DMG straight from the main repo's
+[Releases](https://github.com/IsaacArnold/coda/releases); this tap just tells
+Homebrew where to find it. Coda is signed and notarized by Apple, so it opens
+with no Gatekeeper warning, including on managed/locked-down Macs.
 
 ## Why the trust step?
 
